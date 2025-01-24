@@ -1,0 +1,198 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Soft off-white background */
+    color: #333333; /* Dark Charcoal */
+    line-height: 1.8;
+    font-size: 16px; /* Default font size for better readability */
+}
+
+h1, h2, h3 {
+    color: #333333; /* Dark Charcoal */
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+h1 {
+    font-size: 3.8rem; /* Larger for better prominence */
+}
+
+h2 {
+    font-size: 2.5rem; /* Slightly larger for project titles */
+}
+
+h3 {
+    font-size: 1.8rem; /* For subtitles or section headings */
+}
+
+p {
+    line-height: 1.8;
+    color: #7f8c8d; /* Softer gray for text */
+    text-align: center;
+    font-size: 1.1rem; /* Slightly larger for better readability */
+}
+
+a {
+    color: #2980b9; /* Cool blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.1rem; /* Consistent with paragraph text size */
+}
+
+a:hover {
+    color: #3498db; /* Lighter blue for hover effect */
+}
+
+/* Header Section */
+header {
+    background: #34495e; /* Deep Slate Blue */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0; /* Increased padding for better balance */
+    margin-bottom: 60px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4rem; /* Larger for prominence */
+}
+
+header p {
+    font-size: 1.3rem; /* Slightly larger for readability */
+    margin-top: 20px;
+    opacity: 0.85;
+}
+
+/* Project Container Styling */
+.project-container {
+    width: 90%;
+    max-width: 1400px; /* Increased max width for larger displays */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px; /* Larger gap for a more spacious layout */
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideUp 0.6s ease-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px; /* Larger image height for better visual impact */
+    object-fit: cover;
+    border-bottom: 5px solid #2980b9; /* Cool blue border */
+}
+
+.project-content {
+    padding: 35px; /* Increased padding for better content spacing */
+    text-align: left;
+}
+
+.project-content h2 {
+    font-size: 2.2rem; /* Larger project title */
+    margin-bottom: 20px;
+    color: #333333; /* Dark Charcoal */
+}
+
+.project-content p {
+    font-size: 1.2rem; /* Larger text for better readability */
+    margin-bottom: 30px; /* Increased spacing between description and button */
+    color: #7f8c8d; /* Softer gray for text */
+}
+
+.project-content a {
+    display: inline-block;
+    background-color: #2980b9; /* Cool blue background */
+    color: #fff;
+    padding: 18px 35px; /* Larger padding for buttons */
+    border-radius: 8px;
+    font-size: 1.2rem; /* Slightly larger for better call-to-action */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-content a:hover {
+    background-color: #3498db; /* Lighter blue for hover effect */
+    transform: translateY(-4px);
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e; /* Deep Slate Blue */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0; /* Increased padding for footer balance */
+    margin-top: 80px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem; /* Slightly larger for footer readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .project-content h2 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    .project-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

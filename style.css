@@ -1,0 +1,21 @@
+.game-container {
+	position: relative;
+	height: 500px;
+	background-color: #FFF;
+}
+
+.player {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 50px;
+	background-color: #000;
+}
+
+.obstacle {
+	position: absolute;
+	top: 0;
+	height: 50px;
+	width: 50px;
+	background-color: #F00;
+}
