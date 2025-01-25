@@ -3,150 +3,150 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Soft off-white background */
-    color: #333333; /* Dark Charcoal */
+    background-color: #f5f5f5; /* Light neutral gray background */
+    color: #2c3e50; /* Deep blue-gray for text */
     line-height: 1.8;
     font-size: 16px; /* Default font size for better readability */
 }
 
 h1, h2, h3 {
-    color: #333333; /* Dark Charcoal */
+    color: #2c3e50; /* Deep blue-gray */
     margin-bottom: 30px;
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     transition: color 0.3s;
 }
 
 h1 {
-    font-size: 3.8rem; /* Larger for better prominence */
+    font-size: 3.5rem; /* Refined size for emphasis */
 }
 
 h2 {
-    font-size: 2.5rem; /* Slightly larger for project titles */
+    font-size: 2.3rem; /* Adjusted size for headers */
 }
 
 h3 {
-    font-size: 1.8rem; /* For subtitles or section headings */
+    font-size: 1.6rem; /* Smaller headers for section titles */
 }
 
 p {
     line-height: 1.8;
-    color: #7f8c8d; /* Softer gray for text */
+    color: #7f8c8d; /* Softer gray for secondary text */
     text-align: center;
-    font-size: 1.1rem; /* Slightly larger for better readability */
+    font-size: 1rem; /* Clean and consistent font size */
 }
 
 a {
-    color: #2980b9; /* Cool blue for links */
+    color: #3498db; /* Professional blue for links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-    font-size: 1.1rem; /* Consistent with paragraph text size */
+    font-size: 1rem; /* Consistent size with text */
 }
 
 a:hover {
-    color: #3498db; /* Lighter blue for hover effect */
+    color: #2980b9; /* Darker blue for hover effect */
 }
 
 /* Header Section */
 header {
-    background: #34495e; /* Deep Slate Blue */
-    color: #fff;
+    background: #2c3e50; /* Deep blue-gray */
+    color: #ecf0f1; /* Soft white for text */
     text-align: center;
-    padding: 80px 0; /* Increased padding for better balance */
-    margin-bottom: 60px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 60px 0; /* Balanced padding for headers */
+    margin-bottom: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 4rem; /* Larger for prominence */
+    font-size: 3.8rem; /* Larger header text */
 }
 
 header p {
-    font-size: 1.3rem; /* Slightly larger for readability */
+    font-size: 1.2rem; /* Clean and readable subtext */
     margin-top: 20px;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 /* Project Container Styling */
 .project-container {
     width: 90%;
-    max-width: 1400px; /* Increased max width for larger displays */
+    max-width: 1200px; /* Professional width for layout */
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px; /* Larger gap for a more spacious layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Consistent spacing for cards */
 }
 
 .project-card {
-    background-color: #fff;
-    border-radius: 12px; /* Slightly more rounded corners */
-    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08); /* Subtle shadow */
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: slideUp 0.6s ease-out;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
 }
 
 .project-image {
     width: 100%;
-    height: 250px; /* Larger image height for better visual impact */
+    height: 200px; /* Consistent image size */
     object-fit: cover;
-    border-bottom: 5px solid #2980b9; /* Cool blue border */
+    border-bottom: 3px solid #3498db; /* Accent blue border */
 }
 
 .project-content {
-    padding: 35px; /* Increased padding for better content spacing */
+    padding: 30px; /* Balanced padding */
     text-align: left;
 }
 
 .project-content h2 {
-    font-size: 2.2rem; /* Larger project title */
-    margin-bottom: 20px;
-    color: #333333; /* Dark Charcoal */
+    font-size: 2rem; /* Refined header size */
+    margin-bottom: 15px;
+    color: #2c3e50; /* Deep blue-gray */
 }
 
 .project-content p {
-    font-size: 1.2rem; /* Larger text for better readability */
-    margin-bottom: 30px; /* Increased spacing between description and button */
-    color: #7f8c8d; /* Softer gray for text */
+    font-size: 1rem; /* Clean paragraph size */
+    margin-bottom: 20px; /* Spacing before call-to-action */
+    color: #7f8c8d; /* Neutral secondary text */
 }
 
 .project-content a {
     display: inline-block;
-    background-color: #2980b9; /* Cool blue background */
-    color: #fff;
-    padding: 18px 35px; /* Larger padding for buttons */
-    border-radius: 8px;
-    font-size: 1.2rem; /* Slightly larger for better call-to-action */
+    background-color: #3498db; /* Accent blue background */
+    color: #ffffff; /* Clean white text */
+    padding: 15px 30px; /* Balanced button padding */
+    border-radius: 6px; /* Subtle rounded corners */
+    font-size: 1rem; /* Consistent button text size */
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .project-content a:hover {
-    background-color: #3498db; /* Lighter blue for hover effect */
-    transform: translateY(-4px);
+    background-color: #2980b9; /* Darker accent blue on hover */
+    transform: translateY(-3px);
 }
 
 /* Footer Section */
 footer {
-    background-color: #34495e; /* Deep Slate Blue */
-    color: #fff;
+    background-color: #2c3e50; /* Deep blue-gray */
+    color: #ecf0f1; /* Soft white for text */
     text-align: center;
-    padding: 50px 0; /* Increased padding for footer balance */
-    margin-top: 80px;
+    padding: 40px 0; /* Balanced padding for footer */
+    margin-top: 60px;
 }
 
 footer p {
     margin: 0;
-    font-size: 1.2rem; /* Slightly larger for footer readability */
+    font-size: 1rem; /* Clean and readable size */
 }
 
 /* Responsive Design */
@@ -156,19 +156,19 @@ footer p {
     }
 
     header h1 {
-        font-size: 3rem;
+        font-size: 3rem; /* Adjust header size for smaller screens */
     }
 
     header p {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Adjust text size for readability */
     }
 
     .project-content h2 {
-        font-size: 1.8rem; /* Smaller font size for mobile */
+        font-size: 1.6rem; /* Resize section headers */
     }
 
     .project-content p {
-        font-size: 1.1rem;
+        font-size: 1rem; /* Adjust paragraph size */
     }
 }
 
@@ -176,7 +176,7 @@ footer p {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -185,7 +185,7 @@ footer p {
 }
 
 .project-container {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 @keyframes fadeIn {
